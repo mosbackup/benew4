@@ -20,13 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400..800&family=Anton&family=Oswald:wght@700&family=Ari[...]
     
-    <script>
-      // Prevent flash of light mode on initial load
-      const theme = localStorage.getItem("theme") || "dark";
-      if (theme === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    </script>
+    <script src="/theme-init.js"></script>
   </head>
   <body>
     <div id="root"></div>
