@@ -787,7 +787,7 @@ export default function Home() {
             <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            A live benchmark for evaluating predictive models of YC outperformance, institutionally independent of YC itself.
+            A community initiative to benchmark predictive models of YC outperformance, institutionally independent of YC itself.
           </p>
         </div>
       </footer>
