@@ -247,7 +247,8 @@ export default function Home() {
         {/* Mobile menu drawer */}
         {menuOpen && (
           <div className="md:hidden bg-white/95 dark:bg-black/95 backdrop-blur-md border-t border-border px-4 py-4 flex flex-col gap-4">
-            <a href="#leaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Leaderboard</a>
+<a href="#models_leaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Models Leaderboard</a>
+<a href="#startups_leaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Startups Leaderboard</a>
             <a
               href="https://github.com/benstaf/ycbench"
               target="_blank"
@@ -276,19 +277,12 @@ export default function Home() {
 
             {/* Mobile Theme Toggle */}
             <button
-              onClick={() => {
-                toggleTheme();
-                setMenuOpen(false);
-              }}
-              className="w-full p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors flex items-center justify-between"
-            >
-              <span className="text-sm font-medium">Theme</span>
-              {theme === "dark" ? (
-                <Sun className="w-5 h-5" />
-              ) : (
-                <Moon className="w-5 h-5" />
-              )}
-            </button>
+  onClick={() => { toggleTheme(); setMenuOpen(false); }}
+  className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors self-start"
+  aria-label="Toggle theme"
+>
+  {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+</button>
 
             <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-full w-full">
               <a href={FORM_URL} target="_blank" rel="noopener noreferrer">Submit Model</a>
