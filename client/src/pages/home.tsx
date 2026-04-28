@@ -69,7 +69,7 @@ const MODEL_META: Record<string, { icon: string; label: string }> = {
     icon: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg",
     label: "Sonnet 4.6",
   },
-  GPT: {
+  ChatGPT: {
     icon: "https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg",
     label: "5.3",
   },
@@ -294,9 +294,9 @@ export default function Home() {
       <main className="pt-24 pb-0">
         {/* 1. Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 pt-16 pb-12 max-w-6xl mx-auto text-center">
-          <div className="mb-8 flex justify-center">
+       {/*    <div className="mb-8 flex justify-center">
             <BuiltOnYCBadge />
-          </div>
+          </div> */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 max-w-4xl mx-auto leading-tight">
             Predict the Next <br/>
             <span className="text-primary">Y Combinator Outperformers</span>
@@ -418,7 +418,7 @@ export default function Home() {
       className="h-7 w-auto object-contain"
     />
     <span className="text-sm font-semibold text-foreground">
-      Startup
+      Startup - P26 Batch
     </span>
   </div>
 </th>
@@ -787,7 +787,7 @@ export default function Home() {
             <span className="font-semibold text-lg tracking-tight">Bench</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            A live benchmark for evaluating predictive models of YC outperformance.
+            A live benchmark for evaluating predictive models of YC outperformance, institutionally independent of YC itself.
           </p>
         </div>
       </footer>
