@@ -621,7 +621,7 @@ export default function Home() {
         {/* 12. Roadmap */}
         <section className="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-12 text-center">YC Bench Roadmap</h2>
-          <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradi[...]
+          <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
             {[
               { phase: "Phase 1", title: "Baseline Validation", active: false },
               { phase: "Phase 2", title: "Open Model Submissions", active: true },
@@ -629,10 +629,10 @@ export default function Home() {
               { phase: "Phase 4", title: "AI-Native YC-Only Funds", active: false },
             ].map((step, i) => (
               <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                <div className={`flex items-center justify-center w-10 h-10 rounded-full border-4 border-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1[...]
+                <div className={`flex items-center justify-center w-10 h-10 rounded-full border-4 border-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${step.active ? 'bg-primary text-white' : 'bg-secondary text-muted-foreground'}`}>
                   {step.active ? <CheckCircle2 className="w-5 h-5" /> : <Clock className="w-5 h-5" />}
                 </div>
-                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-border bg-card shadow-sm">
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded border border-border bg-white shadow-sm">
                   <div className="flex items-center justify-between space-x-2 mb-1">
                     <div className="font-bold text-foreground">{step.phase}</div>
                     {step.active && <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">Current</span>}
@@ -643,7 +643,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-
+        
         {/* Get Involved */}
         <section className="py-24 bg-secondary/30">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
