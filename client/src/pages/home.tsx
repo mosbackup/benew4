@@ -418,7 +418,7 @@ export default function Home() {
       className="h-7 w-auto object-contain"
     />
     <span className="text-sm font-semibold text-foreground">
-      Startup - P26 Batch
+      Startup (P26)
     </span>
   </div>
 </th>
@@ -613,7 +613,7 @@ export default function Home() {
               { phase: "Phase 1", title: "Baseline Validation", active: false },
               { phase: "Phase 2", title: "Open Model Submissions", active: true },
               { phase: "Phase 3", title: "Live Performance Leaderboard", active: false },
-              { phase: "Phase 4", title: "AI-Native YC-Only Funds", active: false },
+         {/*      { phase: "Phase 4", title: "AI-Native YC-Only Funds", active: false }, */}
             ].map((step, i) => (
               <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className={`flex items-center justify-center w-10 h-10 rounded-full border-4 border-background shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ${step.active ? 'bg-primary text-white' : 'bg-secondary text-muted-foreground'}`}>
