@@ -171,7 +171,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="bg-[#FF6600] text-white font-bold text-[24px] rounded flex items-center justify-center w-10 h-10 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letter[...]
+            <div className="bg-[#FF6600] text-white font-bold text-[24px] rounded flex items-center justify-center w-10 h-10 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.05em' }}>
               YC
             </div>
             <span className="font-semibold text-lg tracking-tight">Bench</span>
