@@ -69,7 +69,7 @@ const MODEL_META: Record<string, { icon: string; label: string }> = {
     icon: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Claude_AI_symbol.svg",
     label: "Sonnet 4.6",
   },
-  ChatGPT: {
+  GPT: {
     icon: "https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg",
     label: "5.3",
   },
