@@ -401,7 +401,7 @@ export default function Home() {
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Startups Leaderboard</h2>
               <p className="text-muted-foreground">
-                Top 20 startups of the YC P26 Batch, ranked on a 0-100 scale, as of April 27th 2026
+                Top 20 startups of the YC P26 batch, ranked on a 0-100 scale, as of April 27th 2026
               </p>
             </div>
 
