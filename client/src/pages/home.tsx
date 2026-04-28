@@ -371,8 +371,6 @@ export default function Home() {
     
         <section id="startups_leaderboard" className="py-24 px-4 sm:px-6 lg:px-8 bg-white border-y border-border">
           <div className="max-w-7xl mx-auto">
-
-// After
 <div className="text-center mb-8">
   <h2 className="text-3xl md:text-4xl font-bold mb-4">Startups Leaderboard</h2>
   <p className="text-muted-foreground">
@@ -386,8 +384,8 @@ export default function Home() {
                 <thead>
                   <tr className="bg-secondary/70 border-b border-border">
                     <th className="sticky left-0 bg-secondary/70 z-10 py-4 px-3 text-left font-semibold w-8">#</th>
-                    <th className="sticky left-8 bg-secondary/70 z-10 py-3 px-4 text-center font-semibold min-w-[150px] border-r border-border">
-  <div className="flex flex-col items-center gap-1">
+                    <th className="sticky left-8 bg-secondary/70 z-10 py-3 px-4 text-left font-semibold min-w-[150px] border-r border-border">
+  <div className="flex flex-col items-start gap-1">
     <img
       src={YC_LOGO}
       alt="Y Combinator"
