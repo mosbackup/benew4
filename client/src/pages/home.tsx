@@ -79,12 +79,12 @@ const MODEL_META: Record<string, { icon: string; label: string }> = {
     label: "4.20",
   },
   GLM: {
-    icon: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/zhipu-color.png",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Z.ai_%28company_logo%29.svg",
     label: "5.1",
   },
   Kimi: {
-    icon: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/moonshot-color.png",
-    label: "2.6 Thinking",
+    icon: "https://en.wikipedia.org/wiki/File:Kimi-logo-2025.png",
+    label: "2.6",
   },
   DeepSeek: {
     icon: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/deepseek-color.png",
@@ -99,7 +99,7 @@ const MODEL_META: Record<string, { icon: string; label: string }> = {
     label: "M-2.7",
   },
   Mimo: {
-    icon: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/mimo-color.png",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/2/29/Xiaomi_logo.svg",
     label: "v2.5 Pro",
   },
 };
