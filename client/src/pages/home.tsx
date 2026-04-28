@@ -59,7 +59,7 @@ function formatDate(dateStr: string) {
 
 const FORM_URL = "https://forms.gle/oYh3teZ8xU7QrvN18";
 
-
+const YC_LOGO = "https://i0.wp.com/www.vccafe.com/wp-content/uploads/2017/09/Y_Combinator_logo_text_wordmark.png";
 
 const MODEL_META: Record<string, { icon: string; label: string }> = {
   Claude: {
