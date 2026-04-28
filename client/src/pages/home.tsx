@@ -417,20 +417,17 @@ export default function Home() {
                   <tr className="bg-secondary/70 border-b border-border">
                     <th className="sticky left-0 bg-secondary/70 z-10 py-4 px-3 text-left font-semibold w-8">#</th>
                     <th className="sticky left-8 bg-secondary/70 z-10 py-3 px-4 text-left font-semibold min-w-[150px] border-r border-border">
-                      <div className="flex flex-col items-start gap-1">
-                        <img
-                          src={YC_LOGO}
-                          alt="Y Combinator"
-                          className="h-5 w-auto object-contain"
-                        />
-                        <span className="text-[11px] font-medium text-foreground">
-                          Startup
-                        </span>
-                        <span className="text-[10px] text-muted-foreground">
-                          P26 Batch
-                        </span>
-                      </div>
-                    </th>
+  <div className="flex flex-col items-start gap-1">
+    <img
+      src={YC_LOGO}
+      alt="Y Combinator"
+      className="h-7 w-auto object-contain"
+    />
+    <span className="text-sm font-semibold text-foreground">
+      Startup
+    </span>
+  </div>
+</th>
                     <th className="py-4 px-4 text-center font-semibold text-primary whitespace-nowrap border-r border-border">Average</th>
                     {["Claude","GPT","Gemini","Grok","GLM","Kimi","DeepSeek","Qwen","MiniMax","Mimo"].map(m => {
                       const meta = MODEL_META[m];
