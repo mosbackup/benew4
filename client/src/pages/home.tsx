@@ -688,15 +688,15 @@ export default function Home() {
               ))}
             </div>
 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-  <a href={FORM_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibol[...]
+  <a href={FORM_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold text-base transition-colors shadow-sm">
     <Rocket className="w-5 h-5" />
     Submit your Model
   </a>
-  <a href="https://github.com/benstaf/ycbench" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 text-white rounded-lg font-semibold tex[...]
+  <a href="https://github.com/benstaf/ycbench" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 text-white rounded-lg font-semibold text-base transition-colors shadow-sm hover:opacity-90" style={{ background: "#FF8C3A" }}>
     <GithubIcon className="w-5 h-5" />
     Contribute on GitHub
   </a>
-  <a href="https://discord.gg/ekrySuRBf4" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 text-white rounded-lg font-semibold text-bas[...]
+  <a href="https://discord.gg/ekrySuRBf4" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 text-white rounded-lg font-semibold text-base transition-colors shadow-sm hover:opacity-90" style={{ background: "#FF8C3A" }}>
     <DiscordIcon className="w-5 h-5" />
     Join Discord Community
   </a>
@@ -749,6 +749,7 @@ export default function Home() {
           </section>
         )}
 
+
         {/* Contact Us Section */}
         <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-border">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -778,7 +779,7 @@ export default function Home() {
             </div>
             <div className="w-full h-[400px] rounded-2xl overflow-hidden border border-border shadow-md">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0336215160846!2d-122.4018898!3d37.7891283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b8b30531f%3A0x[...]
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0336215160846!2d-122.4018898!3d37.7891283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b8b30531f%3A0x6a0f4435987a049d!2s548%20Market%20St%20%2341382%2C%20San%20Francisco%2C%20CA%2094104!5e0!3m2!1sen!2sus!4v1709999999999!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -791,10 +792,10 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-background border-t border-border py-12">
+<footer className="bg-background border-t border-border py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="bg-[#FF6600] text-white font-bold text-[20px] rounded flex items-center justify-center w-8 h-8 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSp[...]
+            <div className="bg-[#FF6600] text-white font-bold text-[20px] rounded flex items-center justify-center w-8 h-8 select-none pb-0.5" style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: '-0.05em' }}>
               YC
             </div>
             <span className="font-semibold text-lg tracking-tight">Bench</span>
