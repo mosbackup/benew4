@@ -385,7 +385,7 @@ export default function Home() {
     <img
       src={YC_LOGO}
       alt="Y Combinator"
-      className="w-5 h-5"
+      className="h-5 w-auto object-contain"
     />
     <span className="text-[11px] font-medium text-foreground">
       Startup
