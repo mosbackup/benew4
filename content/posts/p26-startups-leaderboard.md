@@ -1,4 +1,3 @@
-import { LEADERBOARD_DATA } from "@/pages/leaderboardData";
 ---
 title: "YC Spring 2026 Batch: How the Startup Leaderboard Was Obtained by Averaging 10 Different LLMs"
 description: "A look at the experimental P26 leaderboard methodology, its limitations, and what comes next."
@@ -9,17 +8,6 @@ author: "YC Bench Team"
 At YC Bench, our goal is to forecast startup momentum as early as possible. For the Spring 2026 (P26) batch, a new, experimental proof of concept was tested: asking Large Language Models to step into the shoes of an investor in YC startups, and rank the batch.
 
 The resulting **P26 Startup Leaderboard** is available [here](https://ycbench.com/#startups_leaderboard),
-
-function BlogPost({ post }) {
-  const isLeaderboardPost = post.slug === "yc-spring-2026-leaderboard"; // match your filename
-
-  return (
-    <article>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      {isLeaderboardPost && <LeaderboardTable />}
-    </article>
-  );
-}
 
 and this post unveils *how* this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
 
