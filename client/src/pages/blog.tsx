@@ -2,6 +2,11 @@ import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import { ArrowRight, Clock, Calendar, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
+import { useEffect } from "react";
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
 interface PostMeta {
   slug: string;
