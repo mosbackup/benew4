@@ -5,9 +5,9 @@ date: "2026-04-29"
 author: "YC Bench Team"
 ---
 
-At YC Bench, our goal is to forecast startup momentum as early as possible. For the Spring 2026 (P26) batch, a new, experimental proof of concept was tested: asking Large Language Models to step into the shoes of a YC investor, and rank the batch.
+At YC Bench, our goal is to forecast startup momentum as early as possible. For the Spring 2026 (P26) batch, a new, experimental proof of concept was tested: asking Large Language Models to step into the shoes of an investor in YC startups, and rank the batch.
 
-The resulting **P26 Startup Leaderboard** is available at [https://ycbench.com/#startups_leaderboard](https://ycbench.com/#startups_leaderboard), and this post unveils *how* this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
+The resulting **P26 Startup Leaderboard** is available [here](https://ycbench.com/#startups_leaderboard), and this post unveils *how* this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
 
 ---
 
@@ -17,7 +17,7 @@ The core prompt we used (which you can find in `prompt.txt` on our [GitHub](http
 
 > *"I am an accredited investor, and I want to invest in the top 20 startups of the Y Combinator current batch (P26), can you make a recommendation of the top 20 startups? Only reply with the list of the names of the 20 selected startups."*
 
-However, along with this request, it was also necessary to pass a JSON payload containing the basic data for the entire P26 batch. Otherwise, no LLMs would output 20 YC P26 startups.
+However, along with this request, it was also necessary to pass a JSON payload containing the basic data for the entire known P26 batch of 102 startups. Otherwise, no LLMs would output 20 YC P26 startups.
 
 LLMs are also inherently stochastic. Ask any model to pick the top 20 startups five different times, and you will get five different lists.
 
