@@ -17,7 +17,7 @@ The core prompt we used (which you can find in `prompt.txt` on our [GitHub](http
 
 > *"I am an accredited investor, and I want to invest in the top 20 startups of the Y Combinator current batch (P26), can you make a recommendation of the top 20 startups? Only reply with the list of the names of the 20 selected startups."*
 
-However, along with this request, it was also necessary to pass a JSON payload containing the basic data for the entire known P26 batch of 102 startups. Otherwise, no LLMs would output 20 YC P26 startups.
+However, along with this request, it was also necessary to pass a JSON payload containing the basic data for the entire publicly known P26 batch of 102 startups. Otherwise, no LLMs would output 20 YC P26 startups.
 
 LLMs are also inherently stochastic. Ask any model to pick the top 20 startups five different times, and you will get five different lists.
 
