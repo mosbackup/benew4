@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link, useParams } from "wouter";
-import { ArrowLeft, Clock, Calendar } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, Moon, Sun } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 
 interface Post {
   slug: string;
@@ -23,6 +24,7 @@ function formatDate(dateStr: string) {
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -53,6 +55,17 @@ export default function BlogPost() {
             <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Blog
             </Link>
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? (
+                <Sun className="w-5 h-5" />
+              ) : (
+                <Moon className="w-5 h-5" />
+              )}
+            </button>
           </div>
         </div>
       </nav>
