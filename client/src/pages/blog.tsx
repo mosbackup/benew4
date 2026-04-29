@@ -4,10 +4,6 @@ import { ArrowRight, Clock, Calendar, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
 import { useEffect } from "react";
 
-useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
-
 interface PostMeta {
   slug: string;
   title: string;
@@ -31,6 +27,11 @@ export default function Blog() {
   });
 
   const { theme, toggleTheme } = useTheme();
+
+  // ✅ FIX: move useEffect here
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
