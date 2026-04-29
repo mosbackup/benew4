@@ -9,7 +9,7 @@ At YC Bench, our goal is to forecast startup momentum as early as possible. For 
 
 The resulting **P26 Startup Leaderboard** is:
 
-![](https://benew4.vercel.app/yc_p26_startups_leaderboard.jpg)
+![](https://ycbench.com/yc_p26_startups_leaderboard.jpg)
 
 This post presents how this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
 
