@@ -7,13 +7,13 @@ author: "YC Bench Team"
 
 At YC Bench, our goal is to quantify and forecast startup momentum as early as possible. For the Spring 2026 (P26) batch, a new, experimental proof of concept was tested: asking Large Language Models to step into the shoes of a YC investor and rank the batch.
 
-The resulting **P26 Startup Leaderboard** is available at [benew4.vercel.app](https://benew4.vercel.app/), and in this post, we want to unveil *how* this list was generated, the quirks of relying on LLMs for venture screening, and why this is just the first step.
+The resulting **P26 Startup Leaderboard** is available at [https://ycbench.com/#startups_leaderboard](https://ycbench.com/#startups_leaderboard), and in this post, we want to unveil *how* this list was generated, the quirks of relying on LLMs for venture screening, and why this is just the first step.
 
 ---
 
 ## The Methodology: Averaging Out LLM Stochastic Outputs
 
-The core prompt we used (which you can find in `prompt.txt` on our GitHub) was simple:
+The core prompt we used (which you can find in `prompt.txt` on our [GitHub](https://github.com/benstaf/ycbench/tree/main/spring_2026_batch/LLMs/prompt.txt)) was simple:
 
 > *"I am an accredited investor, and I want to invest in the top 20 startups of the Y Combinator current batch (P26), can you make a recommendation of the top 20 startups? Only reply with the list of the names of the 20 selected startups."*
 
