@@ -13,7 +13,7 @@ The resulting **P26 Startup Leaderboard** is available [here](https://ycbench.co
 
 ## The Methodology: Averaging Out LLM Stochastic Outputs
 
-The core prompt we used (which you can find in `prompt.txt` on our [GitHub](https://github.com/benstaf/ycbench/tree/main/spring_2026_batch/LLMs/prompt.txt)) is simple:
+The core prompt we used (which you can find in [`prompt.txt` on GitHub](https://github.com/benstaf/ycbench/tree/main/spring_2026_batch/LLMs/prompt.txt)) is simple:
 
 > *"I am an accredited investor, and I want to invest in the top 20 startups of the Y Combinator current batch (P26), can you make a recommendation of the top 20 startups? Only reply with the list of the names of the 20 selected startups."*
 
