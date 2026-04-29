@@ -27,7 +27,7 @@ LLMs are also inherently stochastic. Ask any model to pick the top 20 startups f
 
 To average out this variation, we implemented two layers of aggregation:
 
-* **Model-Level Averaging:** we ran the exact same prompt with JSON payload **5 separate times** for each individual LLM tested, and calculated the average ranking of each YC P26 startup. More trials would be needed to nail down convergence.
+* **Model-Level Averaging:** we ran the exact same prompt with JSON payload **5 separate times** for each individual LLM tested, and calculated the average ranking of each YC P26 startup.
 * **Cross-Model Averaging:** we aggregated the lists from **10 different LLMs** (4 from the United States, 6 from China). The final leaderboard is the average across all models and all iterations.
 
 ---
@@ -40,7 +40,7 @@ The most glaring limitation we observed was the **shallowness of the LLMs' reaso
 
 Because the models were constrained to a single-shot prompt, they often relied entirely on the provided JSON data. They acted more like shallow pattern-matchers — gravitating toward buzzwords, familiar business models, or well-structured descriptions — rather than careful investors doing due diligence.
 
-Models seldom attempted to "think outside the prompt" and explore beyond the immediate text provided to them, even though they accessed their agentic search function, and could theoretically browse the websites of the +100 YC P26 startups.
+Models seldom attempted to "think outside the prompt" and to explore beyond the immediate text provided to them, even though they accessed their agentic search function, and could theoretically browse the websites of the +100 YC P26 startups.
 
 ---
 
@@ -50,7 +50,7 @@ This proof of concept highlights exactly where improvements are needed: moving f
 
 We want the models to actually do their homework — browse the web, analyze startup landing pages, check founder backgrounds, generate and compare market reports — before making any final investment recommendation.
 
-This P26 Leaderboard provides a baseline, but the real unlock will come when models use tools to dig deeper.
+This P26 Leaderboard provides a baseline for AI agents, but the real unlock will come when models use tools to dig deeper.
 
 ---
 
