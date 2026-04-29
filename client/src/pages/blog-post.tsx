@@ -118,7 +118,7 @@ export default function BlogPost() {
 
             <div
               className="prose prose-neutral max-w-none
-                prose-headings:font-semibold prose-headings:tracking-tight
+                prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-foreground
                 prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg
                 prose-a:text-primary prose-a:no-underline hover:prose-a:underline
                 prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
