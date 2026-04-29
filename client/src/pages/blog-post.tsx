@@ -130,7 +130,6 @@ export default function BlogPost() {
                 prose-p:leading-relaxed"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
-            {slug === "yc-spring-2026-leaderboard" && <LeaderboardTable />}
           </article>
         )}
       </main>
