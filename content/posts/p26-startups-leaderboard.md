@@ -7,9 +7,11 @@ author: "YC Bench Team"
 
 At YC Bench, our goal is to forecast startup momentum as early as possible. For the Spring 2026 (P26) batch, a new, experimental proof of concept was tested: asking Large Language Models to step into the shoes of an investor in YC startups, and rank the batch.
 
-The resulting **P26 Startup Leaderboard** is this: ![](https://benew4.vercel.app/yc_p26_startups_leaderboard.jpg)
+The resulting **P26 Startup Leaderboard** is this:
 
-This post unveils *how* this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
+![](https://benew4.vercel.app/yc_p26_startups_leaderboard.jpg)
+
+This post presents how this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
 
 ---
 
