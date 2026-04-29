@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Clock, Calendar, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
+import { LeaderboardTable } from "@/components/LeaderboardTable";
 
 interface Post {
   slug: string;
@@ -129,6 +130,7 @@ export default function BlogPost() {
                 prose-p:leading-relaxed"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
+            {slug === "yc-spring-2026-leaderboard" && <LeaderboardTable />}
           </article>
         )}
       </main>
