@@ -220,17 +220,64 @@ export default function Home() {
     </a>
 
     <a
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+  {/* Logo */}
+  <div className="flex items-center gap-3">
+    <div
+      className="bg-[#FF6600] text-white font-bold text-[24px] rounded flex items-center justify-center w-10 h-10 select-none pb-0.5"
+      style={{ fontFamily: '"Arimo", sans-serif', letterSpacing: "-0.05em" }}
+    >
+      YC
+    </div>
+    <span className="font-semibold text-lg tracking-tight">Bench</span>
+  </div>
+
+  {/* Desktop Navigation */}
+  <div className="hidden md:flex items-center gap-8 ml-10">
+    <a
+      href="#models_leaderboard"
+      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+    >
+      Models Leaderboard
+    </a>
+
+    <a
+      href="#startups_leaderboard"
+      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+    >
+      Startups Leaderboard
+    </a>
+
+    <a
+      href="https://github.com/benstaf/ycbench"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
+    >
+      <GithubIcon /> GitHub
+    </a>
+
+    <a
+      href="https://discord.gg/ekrySuRBf4"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
+    >
+      <DiscordIcon /> Discord
+    </a>
+
+    <a
       href="https://arxiv.org/abs/2604.02378"
       target="_blank"
       rel="noopener noreferrer"
-      className="text-sm font-medium whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
+      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5"
     >
       <PaperIcon /> Paper
     </a>
 
     <Link
       href="/blog"
-      className="text-sm font-medium whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors"
+      className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
     >
       Blog
     </Link>
@@ -239,7 +286,6 @@ export default function Home() {
       onClick={toggleTheme}
       className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
       aria-label="Toggle theme"
-      title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
       {theme === "dark" ? (
         <Sun className="w-5 h-5" />
