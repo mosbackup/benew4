@@ -1,5 +1,4 @@
-import { LEADERBOARD_DATA } from "@/leaderboardData";
-
+import { LEADERBOARD_DATA } from "@/pages/leaderboardData";
 const YC_LOGO =
   "https://i0.wp.com/www.vccafe.com/wp-content/uploads/2017/09/Y_Combinator_logo_text_wordmark.png";
 
