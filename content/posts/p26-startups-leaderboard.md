@@ -10,7 +10,20 @@ At YC Bench, our goal is to forecast startup momentum as early as possible. For 
 
 The resulting **P26 Startup Leaderboard** is available [here](https://ycbench.com/#startups_leaderboard),
 
-<LeaderboardTable />
+import { LeaderboardTable } from "@/components/LeaderboardTable";
+
+// In your blog post page:
+function BlogPost({ post }) {
+  const isLeaderboardPost = post.slug === "yc-spring-2026-leaderboard"; // match your filename
+
+  return (
+    <article>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      {isLeaderboardPost && <LeaderboardTable />}
+    </article>
+  );
+}
+
 and this post unveils *how* this list was obtained, the quirks of relying on LLMs for venture screening, and why this is just the first step.
 
 ---
