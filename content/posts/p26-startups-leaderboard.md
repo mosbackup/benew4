@@ -27,8 +27,8 @@ LLMs are also inherently stochastic. Ask any model to pick the top 20 startups f
 
 To average out this variation, we implemented two layers of aggregation:
 
-* **Model-Level Averaging:** we ran the exact same prompt with JSON payload **5 separate times** for each individual LLM tested, and calculated the average ranking of each YC P26 startup. More trials would be needed to nail down the law of large numbers convergence.
-* **Cross-Model Averaging:** we aggregated the average lists from **10 different LLMs** (4 from the United States, 6 from China). The final leaderboard is the average across all models and all iterations.
+* **Model-Level Averaging:** we ran the exact same prompt with JSON payload **5 separate times** for each individual LLM tested, and calculated the average ranking of each YC P26 startup. More trials would be needed to nail down convergence.
+* **Cross-Model Averaging:** we aggregated the lists from **10 different LLMs** (4 from the United States, 6 from China). The final leaderboard is the average across all models and all iterations.
 
 ---
 
@@ -36,11 +36,11 @@ To average out this variation, we implemented two layers of aggregation:
 
 While this approach stabilized the outputs, this initial run remains a small proof of concept.
 
-The most glaring limitation we observed was the **superficiality of the LLMs' reasoning**.
+The most glaring limitation we observed was the **shallowness of the LLMs' reasoning**.
 
 Because the models were constrained to a single-shot prompt, they often relied entirely on the provided JSON data. They acted more like shallow pattern-matchers — gravitating toward buzzwords, familiar business models, or well-structured descriptions — rather than careful investors doing due diligence.
 
-Models seldom attempted to "think outside the prompt" and explore beyond the immediate text provided to them, even though they had access to an agentic search function, and the websites of 100+ YC P26 startups.
+Models seldom attempted to "think outside the prompt" and explore beyond the immediate text provided to them, even though they accessed their agentic search function, and could theoretically browse the websites of the +100 YC P26 startups.
 
 ---
 
@@ -54,4 +54,4 @@ This P26 Leaderboard provides a baseline, but the real unlock will come when mod
 
 ---
 
-Want to see the raw data, the models used, and the code that ran the 5× iterations? Check out the [`spring_2026_batch/LLMs` directory in the YC Bench GitHub repo](https://github.com/benstaf/ycbench/tree/main/spring_2026_batch/LLMs).
+Want to see the raw data? Check out the [`spring_2026_batch/LLMs` directory in the YC Bench GitHub repo](https://github.com/benstaf/ycbench/tree/main/spring_2026_batch/LLMs).
