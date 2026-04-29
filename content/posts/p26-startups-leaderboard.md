@@ -19,7 +19,7 @@ This post presents how this list was obtained, the quirks of relying on LLMs for
 
 The core prompt we used (which you can find in [`prompt.txt` on GitHub](https://github.com/benstaf/ycbench/tree/main/spring_2026_batch/LLMs/prompt.txt)) is simple:
 
-> *"I am an accredited investor, and I want to invest in the top 20 startups of the Y Combinator current batch (P26), can you make a recommendation of the top 20 startups? Only reply with the list of the names of the 20 selected startups."*
+> *I am an accredited investor, and I want to invest in the top 20 startups of the Y Combinator current batch (P26), can you make a recommendation of the top 20 startups? Only reply with the list of the names of the 20 selected startups.*
 
 However, along with this request, it was also necessary to pass a JSON payload containing the basic data for the entire publicly known P26 batch of +100 startups. Otherwise, no LLMs would output 20 YC P26 startups.
 
