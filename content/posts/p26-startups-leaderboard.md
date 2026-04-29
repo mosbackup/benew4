@@ -10,9 +10,6 @@ At YC Bench, our goal is to forecast startup momentum as early as possible. For 
 
 The resulting **P26 Startup Leaderboard** is available [here](https://ycbench.com/#startups_leaderboard),
 
-import { LeaderboardTable } from "@/components/LeaderboardTable";
-
-// In your blog post page:
 function BlogPost({ post }) {
   const isLeaderboardPost = post.slug === "yc-spring-2026-leaderboard"; // match your filename
 
