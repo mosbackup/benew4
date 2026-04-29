@@ -254,7 +254,6 @@ export default function Home() {
       </a>
     </Button>
   </div>
-</div>
           {/* Mobile hamburger */}
           <button
             className="md:hidden p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
