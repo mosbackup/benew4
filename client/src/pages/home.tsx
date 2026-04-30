@@ -186,14 +186,14 @@ export default function Home() {
   {/* Desktop Navigation */}
   <div className="hidden md:flex items-center gap-8 ml-10">
     <a
-      href="#models_leaderboard"
+      href="#modelsleaderboard"
       className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
     >
       Models Leaderboard
     </a>
 
     <a
-      href="#startups_leaderboard"
+      href="#startupsleaderboard"
       className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
     >
       Startups Leaderboard
@@ -271,8 +271,8 @@ export default function Home() {
         {/* Mobile menu drawer */}
         {menuOpen && (
           <div className="md:hidden bg-white/95 dark:bg-black/95 backdrop-blur-md border-t border-border px-4 py-4 flex flex-col gap-4">
-<a href="#models_leaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Models Leaderboard</a>
-<a href="#startups_leaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Startups Leaderboard</a>
+<a href="#modelsleaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Models Leaderboard</a>
+<a href="#startupsleaderboard" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-1">Startups Leaderboard</a>
             <a
               href="https://github.com/benstaf/ycbench"
               target="_blank"
@@ -374,7 +374,7 @@ export default function Home() {
         </section>
 
         {/* 3. Live Leaderboard Preview */}
-        <section id="models_leaderboard" className="py-24 bg-secondary/30">
+        <section id="modelsleaderboard" className="py-24 bg-secondary/30">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -420,7 +420,7 @@ export default function Home() {
         </section>
 
         {/* 4. Startup Leaderboard Table */}
-        <section id="startups_leaderboard" className="py-24 px-4 sm:px-6 lg:px-8 bg-card border-y border-border">
+        <section id="startupsleaderboard" className="py-24 px-4 sm:px-6 lg:px-8 bg-card border-y border-border">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Startups Leaderboard</h2>
