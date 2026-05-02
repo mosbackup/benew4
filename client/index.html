@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
     <meta property="og:title" content="YC Bench | Live Benchmark - Startup Velocity" />
     <meta property="og:description" content="Predict the next YC outperformers with live cohort-relative evaluation." />
     <meta property="og:type" content="website" />
@@ -12,22 +11,27 @@
     <meta name="twitter:title" content="YC Bench | Live Benchmark - Startup Velocity" />
     <meta name="twitter:description" content="Predict the next YC outperformers with live cohort-relative evaluation." />
     <meta name="twitter:image" content="https://www.ycbench.com/ycbench.png" />
-
     <title>YC Bench | Predict the Next YC Outperformers</title>
-
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@400..800&family=Anton&family=Oswald:wght@700&family=Ari[...]
-
     <script>
       const saved = localStorage.getItem("theme");
+      let isDark;
       if (saved) {
-        document.documentElement.classList.toggle("dark", saved === "dark");
+        isDark = saved === "dark";
       } else {
         const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        document.documentElement.classList.toggle("dark", tz === "America/Los_Angeles");
+        isDark = tz === "America/Los_Angeles";
       }
+      document.documentElement.classList.toggle("dark", isDark);
+
+      // Set browser chrome color to match
+      const meta = document.createElement("meta");
+      meta.name = "theme-color";
+      meta.content = isDark ? "#171717" : "#f5f5ed";
+      document.head.appendChild(meta);
     </script>
   </head>
   <body>
