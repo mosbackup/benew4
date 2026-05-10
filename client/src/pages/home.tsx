@@ -86,7 +86,7 @@ const MODEL_META: Record<string, { icon: string; label: string }> = {
     label: "5.1",
   },
   Kimi: {
-    icon: "https://apktodo.io/uploads/2025/12/kimi-icon-150.jpg",
+    icon: "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Kimi-logo-2025.png/250px-Kimi-logo-2025.png",
     label: "2.6",
   },
   DeepSeek: {
